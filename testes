@@ -1,0 +1,30 @@
+Questão 2:
+n = int(input("Qual número vc deseja descobrir se pertence a sequencia de fibonacci"))
+ultimo=1
+penultimo=1
+
+
+if (n==1) or (n==2):
+    print("pertence")
+else:
+    count=3
+    while count <= n:
+        termo = ultimo + penultimo
+        penultimo = ultimo
+        ultimo = termo
+        count += 1
+    if ( termo == n ):
+      print("Pertence")
+    else:
+      print("Não pertence")
+      
+Questão 4:
+def reverse(s): 
+  str = "" 
+  for i in s: 
+    str = i + str
+  return str
+ 
+ palavra = input("Qual número vc deseja descobrir se pertence a sequencia de fibonacci")
+
+ print(reverse(palavra))
